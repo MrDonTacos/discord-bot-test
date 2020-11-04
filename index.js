@@ -1,5 +1,6 @@
 const Discord = require('discord.js');
 const config = require('./config.json')
+require('custom-env').env(true)
 const client = new Discord.Client();
 
 client.once('ready', () => {
@@ -12,4 +13,4 @@ client.on('message', message => {
         message.channel.send("Pong!")
 });
 
-client.login(config.token);
+client.login(process.env.PRIVATE_TOKEN);
