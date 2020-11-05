@@ -18,15 +18,32 @@ client.once('ready', () => {
 });
 
 client.on('message', message => {
-    if(message.content.startsWith(config.prefix))
+    const prefix = config.prefix;
+    if(message.content.startsWith(prefix))
     {
-        const args = message.content.slice(config.prefix.length).trim().split(/ +/);
-        const command = args.shift().toLowerCase();
+        const args = message.content.slice(prefix.length).trim().split(/ +/);
+        console.log("Args: " + args + "\n")
+        const commandName = args.shift().toLowerCase();
+        console.log("commandName: " + commandName + "\n")
 
-        if (!client.commands.has(command)) return;
+        if (!client.commands.has(commandName)) return;
+
+        const command = client.commands.get(commandName);
+        console.log("Command: " +command + "\n")
+
+        if (command.args && !args.length) {
+            let reply = `No se pasado ningún argumento, ${message.author}!`;
+
+            if(command.usage) {
+			    reply += `\nEl uso apropiado del comando es: \`${prefix}${command.name} ${command.usage}\``;
+		    }
+
+    		return message.channel.send(reply);
+        }
+
 
         try {
-        	client.commands.get(command).execute(message, args);
+        	command.execute(message, args);
         } catch (error) {
         	console.error(error);
         	message.reply('Hubo un error al ejecutar el comando!');
