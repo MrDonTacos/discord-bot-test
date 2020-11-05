@@ -35,7 +35,7 @@ $ sudo apt update
 $ sudo apt install nodejs npm
 ~~~
 
-*** *Nota: En Ubuntu 20.04 el paquete incluído por defecto de NodeJS en nuestros repositorios viene con la versión 10.19.0*  
+ ** *Nota: En Ubuntu 20.04 el paquete incluído por defecto de NodeJS en nuestros repositorios viene con la versión 10.19.0*  **
 
 Para clonar el proyecto de github a través de ***HTTPS*** realizaremos lo siguiente en consola *Nota: Ya tenemos que contar con git y tenerlo configurado*
 
