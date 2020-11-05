@@ -3,8 +3,8 @@ BOT plantilla para discord
 
 >"Everything That Lives Is Designed To End.  They Are Perpetually Trapped In A Never-Ending Spiral Of Life And Death.  However, Life Is All About The Struggle Within This Cycle. That Is What 'We' Believe." - Nier Automata
 
-`<p>Bot diseñado para servir como plantilla para creación de nuevos bots de discord, 
-incluye las funcionalidades básicas de:</p>`
+Bot diseñado para servir como plantilla para creación de nuevos bots de discord, 
+incluye las funcionalidades básicas de:
 
 * index.js 
 * Folder de Frases 
