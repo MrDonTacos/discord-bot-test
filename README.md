@@ -126,3 +126,13 @@ Archivo que contiene el caractér que quedrémos que dispare los comandos del bo
     "prefix": "caractér-diparador" //!, .-, ., ...
 }
 ~~~
+
+Inciar nuestro BOT
+-
+Para iniciar nuestro bot ocuparemos posicionarnos en consola (o utilizar la terminal de nuestro editor de texto en caso de contar con ella) sobre la raíz de nuestro folder y ejecutaremos el siguiente comando
+
+~~~
+$ node index.js
+~~~
+
+***¡Felicidades!*** Nuestro BOT ahora se encuentra online 
