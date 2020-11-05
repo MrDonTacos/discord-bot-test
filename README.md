@@ -5,13 +5,13 @@ BOT plantilla para discord
 
 <p>Bot diseñado para servir como plantilla para creación de nuevos bots de discord, 
 incluye las funcionalidades básicas de:</p>
-*index.js
-*Folder de Frases
-*Recorrido de Folder de Frases en index.js
-*help Dinámico ¡Incluye descripción de parametros y consulta individual de frases!
-*Estructura de Frases separada del index.js
-*Función reload para comandos protegida por llave
-*Archivo config.json con el prefix
+* index.js *
+* Folder de Frases *
+* Recorrido de Folder de Frases en index.js *
+* help Dinámico ¡Incluye descripción de parametros y consulta individual de frases! *
+* Estructura de Frases separada del index.js *
+* Función reload para comandos protegida por llave *
+* Archivo config.json con el prefix *
 
 Crear un bot a partir de la plantilla 
 -
