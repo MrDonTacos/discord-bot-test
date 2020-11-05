@@ -1,6 +1,6 @@
 const fs = require('fs')
 const Discord = require('discord.js');
-const config = require('./config.json')
+const {prefix} = require('./config.json')
 
 require('custom-env').env(true)
 
@@ -9,7 +9,7 @@ client.commands = new Discord.Collection();
 const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'));
 
 for (const file of commandFiles) {
-	const command = require(`./commands/${file}`);
+    const command = require(`./commands/${file}`);
 	client.commands.set(command.name, command);
 }
 
@@ -18,18 +18,14 @@ client.once('ready', () => {
 });
 
 client.on('message', message => {
-    const prefix = config.prefix;
     if(message.content.startsWith(prefix))
     {
         const args = message.content.slice(prefix.length).trim().split(/ +/);
-        console.log("Args: " + args + "\n")
         const commandName = args.shift().toLowerCase();
-        console.log("commandName: " + commandName + "\n")
 
         if (!client.commands.has(commandName)) return;
 
         const command = client.commands.get(commandName);
-        console.log("Command: " +command + "\n")
 
         if (command.args && !args.length) {
             let reply = `No se pasado ningún argumento, ${message.author}!`;
@@ -37,7 +33,6 @@ client.on('message', message => {
             if(command.usage) {
 			    reply += `\nEl uso apropiado del comando es: \`${prefix}${command.name} ${command.usage}\``;
 		    }
-
     		return message.channel.send(reply);
         }
 
