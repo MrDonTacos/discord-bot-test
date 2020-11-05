@@ -88,6 +88,9 @@ Para crear un nuevo comando bastará con crear un nuevo archvo.js dentro de la c
 ~~~
 sientete libre de eliminar todos los comandos anteriores de ser necesario, estos archivos no afectaran al funcionamiento de tu bot.
 
+***¡Importante!*** 
+Leer el archvo greet.js para más ayuda sobre como definir un comando sin parametros, leer el archivo args-info.js para más ayuda sobre como definir un comando con parametros
+
 Comando help y reload
 -
 #### help
