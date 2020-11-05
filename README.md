@@ -3,6 +3,10 @@ BOT plantilla para discord
 
 >"Everything That Lives Is Designed To End.  They Are Perpetually Trapped In A Never-Ending Spiral Of Life And Death.  However, Life Is All About The Struggle Within This Cycle. That Is What 'We' Believe." - Nier Automata
 
+<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fbeebom.com%2Fwp-content%2Fuploads%2F2018%2F02%2Fdiscord-bots.jpg&f=1&nofb=1"
+     alt="Markdown Monster icon"
+     style="text-align: center; display: inline-block; margin-left:35%" width=180 heigth=100 />
+
 Bot diseñado para servir como plantilla para creación de nuevos bots de discord, 
 incluye las funcionalidades básicas de:
 
@@ -114,8 +118,8 @@ config.json
 -
 Archivo que contiene el caractér que quedrémos que dispare los comandos del bot, este puede ser modificado sin problemas
 
-~~
+~~~
 {
     "prefix": "caractér-diparador" //!, .-, ., ...
 }
-~~
+~~~
