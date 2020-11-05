@@ -1,3 +1,5 @@
-*IMPORTANTE*
+#Bot Plantilla para discord
+===
 
-*Estructura base del bot* 
+##Crear un bot a partir de la plantilla
+--
