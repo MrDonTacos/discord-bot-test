@@ -3,7 +3,7 @@ BOT plantilla para discord
 
 >"Everything That Lives Is Designed To End.  They Are Perpetually Trapped In A Never-Ending Spiral Of Life And Death.  However, Life Is All About The Struggle Within This Cycle. That Is What 'We' Believe." - Nier Automata
 
-<div style="font-family: 'arial'; font-size: 40pt">
+<div style="font-family: 'arial'; font-size: '40pt'">
 <p style="color: 'red'">Bot diseñado para servir como plantilla para creación de nuevos bots de discord, 
 incluye las funcionalidades básicas, un folder ejemplo que contiene frases predefinidas, también contiene la parte avanzada del tutorial
 en la que se separa cada comando, se crea un menú del comando <b>help</b> dinámica, en la cual muestra la información de los comandos, sus parametros
