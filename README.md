@@ -1,3 +1,3 @@
 *IMPORTANTE*
 
-*Estructura base del bot* 
+# BOT para listas colaborativas
