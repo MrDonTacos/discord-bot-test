@@ -1,3 +1,3 @@
 *IMPORTANTE*
 
-# BOT para listas colaborativas
+# BOT para listas colaborativas (Serverless)

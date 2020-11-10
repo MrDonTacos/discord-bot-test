@@ -9,7 +9,7 @@
   "author": "Saul Canedo Castillo",
   "license": "ISC",
   "dependencies": {
-    "custom-env": "^2.0.1",
-    "sequelize": "^6.3.5"
+    "axios": "^0.21.0",
+    "custom-env": "^2.0.1"
   }
 }
