@@ -7,7 +7,7 @@ module.exports = {
 	execute(message, args) {
         const data = [];
         const { commands } = message.client;
-
+        console.log('SOmething wrong')
         if (!args.length) {
             data.push('Lista de comandos disponibles: \n');
             data.push(commands.map(command => {
@@ -38,7 +38,7 @@ module.exports = {
         if (command.aliases) data.push(`Alias ${command.aliases.join(', ')}`);
         if (command.description) data.push(`${command.description}`);
         if (command.usage) data.push(`\nParametros ${prefix}${command.name} ${command.usage}`);
-
+        if (command.ejem) data.push(`\n Ejemplos de uso del comando: ${prefix}${command.name} ${command.ejem}`)
         message.channel.send(data, { split: true });
     }
 };
