@@ -11,11 +11,16 @@ module.exports = {
             para más información del comando consultar ${prefix}help`)
         }
         else {
-            const result = List.get().then(response => {
-                return response;
+            let text = "Listas creadas para este servidor: \n";
+            const result = List.getAll().then(response => {
+                response.forEach(element => {
+                    text += element.fields.Name + "\n"
+                });
+                return message.channel.send(text);
             }).catch(error => {
-                return message.channel.send(`Surgió un error al obtener las listas`)
+                return message.channel.send(`Surgió un error al obtener las listas, ${error}`);
             });
+            console.log(result);
         }
         
 	},

@@ -19,7 +19,8 @@ module.exports = {
         {
           const body = {
             "Name": args[0],
-            "Description": args[1] ? args[1] : ' '
+            "Description": args[1] ? args[1] : ' ',
+            "ServerID": message.guild.id
           }
           try{
             let success = List.create  (body).then(response =>{
