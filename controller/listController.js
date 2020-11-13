@@ -1,19 +1,14 @@
 const axios = require('axios')
+const instance = require('../axios.js')
+require('custom-env').env(true)
 
-const instance = axios.create({
-    baseURL: `https://api.airtable.com`,
-    timeout: 1000,
-    headers: {'Authorization': 'Bearer ' + process.env.AIRTABLE_API_KEY}
-  })
-
-
-module.exports = async body => {
+module.create = async body => {
     const {
         Name,
         Description,
     } = body
 
-        var success = await instance.post("/v0/appTEzymOEBjlewgj/list ", {
+        var success = await instance().post(`/v0/${process.env.AIRTABLE_BASE_LIST}/list `, {
         "fields": {
             "Name": Name,
             "Description": Description,
@@ -26,3 +21,16 @@ module.exports = async body => {
     })
     return success;
 };
+
+module.getAll = () => {
+    axios.get(`/v0/${AIRTABLE_BASE_LIST}/list `)
+      .then(function (response) {
+        console.log(response);
+      })
+      .catch(function (error) {
+        console.log(error);
+      })
+      .then(function () {
+        // always executed
+      });  
+}

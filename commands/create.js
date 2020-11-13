@@ -22,7 +22,7 @@ module.exports = {
             "Description": args[1] ? args[1] : ' '
           }
           try{
-            let success = List  (body).then(response =>{
+            let success = List.create  (body).then(response =>{
               return message.channel.send(`Lista ${response.data.fields.Name} creada con exito`)
             }).catch(error =>{
               message.channel.send(`Error al crear la lista ${args[0]}`)
