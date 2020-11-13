@@ -25,7 +25,7 @@ module.create = async body => {
 module.getAll = () => {
     axios.get(`/v0/${AIRTABLE_BASE_LIST}/list `)
       .then(function (response) {
-        console.log(response);
+        return response;
       })
       .catch(function (error) {
         console.log(error);
