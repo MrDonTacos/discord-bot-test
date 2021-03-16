@@ -2,13 +2,12 @@ const axios = require('../axios.js')
 require('custom-env').env(true)
 
 module.exports.create = async body => {
-    console.log("Se entró a la función")
     try {
     const {
         Name,
         Description,
     } = body
-        var success = await axios.instance().post(`/v0/${process.env.AIRTABLE_BASE_LIST}/list `, {
+        var success = await axios.instance().post(`/v0/${process.env.AIRTABLE_BASE_LIST}/list`, {
         "fields": {
             "Name": Name,
             "Description": Description,
@@ -20,7 +19,7 @@ module.exports.create = async body => {
     }).catch((error) =>{
         console.log(`Error: ${error}`)
     })
-        return success;
+    return success;
     } catch (error) {
         console.log("Error: " + error)
     }
@@ -28,7 +27,8 @@ module.exports.create = async body => {
 
 module.exports.getAll = async() => {
     try {
-    const success = await axios.instance().get(`/v0/${process.env.AIRTABLE_BASE_LIST}/list `)
+        console.log(await axios.instance().get());
+    const success = await axios.instance().get(`/v0/${process.env.AIRTABLE_BASE_LIST}/list`)
       .then(function (response) {
         return response;
       })
