@@ -2,7 +2,7 @@ const { prefix } = require('../config.json');
 
 module.exports = {
 	name: 'help',
-	description: 'Lista de todos los comandos o un comando en especifico.',
+	description: 'Hola! Soy Sunday, una IA diseñada para la materia de I.A. de Sistemas Computacionales. \n Lista de todos los comandos o un comando en especifico.',
 	usage: '[command name]',
 	execute(message, args) {
         const data = [];
